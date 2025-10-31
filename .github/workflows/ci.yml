@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ] # Or "master" if that's your default branch
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a simple script
+        run: echo "Workflow is running!"
